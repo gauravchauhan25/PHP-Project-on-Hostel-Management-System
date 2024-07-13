@@ -1,0 +1,103 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+.background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('../img/msit.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: #fff;
+      z-index: -1;
+      filter: blur(2px);
+}
+
+header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 100px;
+      /* background-color: red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 99;
+}
+
+.logo {
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100;
+      color: #fff;
+      user-select: none;
+}
+
+.navigation .anchor {
+      position: relative;
+      font-size: 23px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 40px;
+}
+
+.navigation .anchor::after {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 5px;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .5s;
+
+}
+
+.navigation .anchor:hover::after {
+      transform-origin: left;
+
+      transform: scaleX(1);
+      /* transition: transform .5s; */
+}
+
+.navigation .btnLogin-popup {
+      width: 130px;
+      height: 50px;
+      background: transparent;
+      border: 2px solid #fff;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1em;
+      color: #fff;
+      font-weight: 500;
+      margin-left: 40px;
+      transition: .5s;
+      justify-content: end;
+}
+
+.navigation .btnLogin-popup:hover {
+      background-color: #fff;
+      color: #162938;
+}
+
+.content {
+      color: #fff;
+      margin-top: 270px;
+      text-align: center;
+}
+
+.content h1 {
+      font-size: 80px;
+}
